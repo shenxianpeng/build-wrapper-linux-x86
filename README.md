@@ -3,9 +3,9 @@
 ## Download and unzip the Build Wrapper for Linux
 
 ```bash
-curl --create-dirs -sSLo $HOME/.sonar/build-wrapper-linux-x86.zip https://github.com/shenxianpeng/build-wrapper-linux-x86/raw/main/build-wrapper-linux-x86.zip
-unzip -o $HOME/.sonar/build-wrapper-linux-x86.zip -d $HOME/.sonar/
-export PATH=$HOME/.sonar/build-wrapper-linux-x86:$PATH
+curl -sSLo /opt/build-wrapper-linux-x86.zip https://github.com/shenxianpeng/build-wrapper-linux-x86/raw/main/build-wrapper-linux-x86.zip
+cd /opt && unzip build-wrapper-linux-x86.zip
+export PATH=/opt/build-wrapper-linux-x86:$PATH
 ```
 
 ## Execute the Build Wrapper as a prefix to your build command
